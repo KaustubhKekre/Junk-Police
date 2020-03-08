@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.FileProvider;
 import android.util.Base64;
@@ -118,7 +119,7 @@ return v;
                                 MediaType.parse("text/plain"),
                                 spref.getString("lon","longitude"));
 
-                        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.43.17:8000/api/").addConverterFactory(
+                        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.43.48:8000/api/").addConverterFactory(
                                 GsonConverterFactory.create()).build();
                         RetrofitInterface retrofitInterface = retrofit.create(RetrofitInterface.class);
                         Call<ResponseBody> call = retrofitInterface.uploadImage(spref.getString("token", null),fileData,descriptionPart, latPart,lonPart);

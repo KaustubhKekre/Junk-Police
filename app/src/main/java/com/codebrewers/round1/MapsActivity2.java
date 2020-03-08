@@ -46,7 +46,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.43.17:8000/api/").addConverterFactory(
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.43.48:8000/api/").addConverterFactory(
                 GsonConverterFactory.create()).build();
         RetrofitInterface retrofitInterface = retrofit.create(RetrofitInterface.class);
         Call<AQIModel>aqiModelCall=retrofitInterface.getAQI();

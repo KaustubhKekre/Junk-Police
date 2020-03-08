@@ -42,7 +42,7 @@ CompostModel compostModel;
             public void onClick(View v) {
                 login.setVisibility(View.GONE);
                 progressBar.setVisibility(View.VISIBLE);
-                Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.43.17:8000/api/").addConverterFactory(
+                Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.43.48:8000/api/").addConverterFactory(
                         GsonConverterFactory.create()).build();
                 RetrofitInterface retrofitInterface = retrofit.create(RetrofitInterface.class);
                 if(user.equals("farmer")){

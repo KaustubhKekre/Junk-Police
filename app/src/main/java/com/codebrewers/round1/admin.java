@@ -34,7 +34,7 @@ public class admin extends AppCompatActivity {
         available=findViewById(R.id.available);
         available.setText(spref.getString("total","0")+" kg");
         progressBar=findViewById(R.id.progressbar);
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.43.17:8000/api/").addConverterFactory(GsonConverterFactory.create()).build();
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.43.48:8000/api/").addConverterFactory(GsonConverterFactory.create()).build();
         RetrofitInterface retrofitInterface = retrofit.create(RetrofitInterface.class);
         Call<ArrayList<CompostModel>> com=retrofitInterface.compost_list();
         com.enqueue(new Callback<ArrayList<CompostModel>>() {
