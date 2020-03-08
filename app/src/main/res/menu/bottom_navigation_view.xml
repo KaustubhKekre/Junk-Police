@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Compost"
+        android:id="@+id/compost"
+        android:icon="@drawable/compost"/>
+    <item
+        android:title="Air Quality"
+        android:id="@+id/landing"
+        android:icon="@drawable/air_quality"/>
+
+
+    <item
+        android:title="Upload"
+        android:id="@+id/upload"
+        android:icon="@drawable/trash_upload"/>
+
+
+    <item
+        android:title="Contact Us"
+        android:id="@+id/chat"
+        android:icon="@drawable/chat"/>
+    <item
+        android:title="Profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        />
+</menu>

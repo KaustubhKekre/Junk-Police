@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ChatFragment"
+    android:background="@drawable/common_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:cardCornerRadius="10dp"
+            android:elevation="3dp"
+            android:layout_margin="16dp"
+            android:background="@color/light_purple"
+            android:id="@+id/session">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/light_purple">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pollution"
+                    android:layout_margin="5dp"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Session 1"
+                        android:textStyle="bold"
+                        android:textSize="30dp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/purple"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8 March,2020"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/purple"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="9 am - 10 am"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="@color/purple"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Topic: Air pollution masks"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="@color/purple"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</FrameLayout>

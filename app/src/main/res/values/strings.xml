@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Junk Police</string>
+    <string name="forgot"><u>Forgot password?</u></string>
+    <string name="create"><u>Create one</u></string>
+    <string name="login"><u>Login</u></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+</resources>

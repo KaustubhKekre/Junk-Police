@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 01. login -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_back"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/login"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:textSize="32dp"
+            android:textColor="#000000"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/dark_grey"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+
+            >
+
+            <AutoCompleteTextView
+
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter username"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="@color/dark_grey"
+                android:textIsSelectable="false"
+                android:textSize="20sp"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/dark_grey"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+
+            >
+
+            <AutoCompleteTextView
+
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter email"
+                android:imeOptions="actionNext"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="@color/dark_grey"
+                android:textIsSelectable="false"
+                android:textSize="20sp"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/dark_grey"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:id="@+id/layoutPhone"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/phone"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your phone number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="@color/dark_grey"
+                android:textIsSelectable="false"
+                android:textSize="20sp"
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/dark_grey"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+
+            >
+
+            <AutoCompleteTextView
+
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter phone number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="@color/dark_grey"
+                android:textIsSelectable="false"
+                android:textSize="20sp"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/dark_grey"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+
+            >
+
+            <AutoCompleteTextView
+
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="@color/dark_grey"
+                android:textIsSelectable="false"
+                android:textSize="20sp"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/dark_grey"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+
+            >
+
+            <AutoCompleteTextView
+
+                android:id="@+id/cpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#000000"
+                android:textColorHint="@color/dark_grey"
+                android:textIsSelectable="false"
+                android:textSize="20sp"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_margin="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style_two"
+                android:text="Sign up"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/save"
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/orange"/>
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/pbar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:indeterminateDrawable="@drawable/progress_two"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="60dp"
+                />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I already have an account"
+            android:textSize="16sp"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="16sp"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:id="@+id/login2"/>
+    </LinearLayout>
+</RelativeLayout>
